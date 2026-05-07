@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -28,18 +29,23 @@ body{
 
 @keyframes anima{
     from{
-        opacity: o;
-        transform: translateX(20px);
+        opacity: 0;
+        transform: translateY(10px);
     }
 
     to{
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
 .logo{
     color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.logo:hover{
+    color: black;
 }
 
 .nav{
@@ -60,14 +66,44 @@ body{
 
 .tentang{
     height: 100vh;
+    scroll-margin-top: 90px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     margin: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.tentang p{
+    margin: 8px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    text-align: justify;
+    
+}
+
+.tentang img{
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+    margin: 10px;
+    box-shadow:  0 0 15px black;
+
+    transition: 0.3s;
+}
+
+.tentang img:hover{
+    transform: scale(1.05);
 }
 
 .his{
     font-size: 50px;
     gap: 5px;
+}
+
+.Form{
+    height: 100vh;
+    scroll-margin-top: 80px;
 }
