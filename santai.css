@@ -13,6 +13,8 @@ body{
 
 .navbar{
     display: flex;
+    height: 70px;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
@@ -22,6 +24,7 @@ body{
 
     backdrop-filter: blur(10px);
     position: sticky;
+    z-index: 1000;
     top: 0;
 
     animation: anima 1s ease-in-out;
@@ -37,6 +40,14 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.navbar h1{
+    font-size: 45px;
+}
+
+.navbar li{
+    font-size: 25px;
 }
 
 .logo{
@@ -72,6 +83,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 30px;
+    scroll-margin-top: 100px;
     font-family: Arial, sans-serif;
 }
 
@@ -88,7 +100,7 @@ body{
     width: 150px;
     height: auto;
     border-radius: 40%;
-    margin: 10px;
+    margin: 30px;
     box-shadow:  0 0 15px black;
 
     transition: 0.3s;
@@ -105,5 +117,67 @@ body{
 
 .Form{
     height: 100vh;
-    scroll-margin-top: 80px;
+    gap: 50px;
+    font-family: Arial, sans-serif;
+    scroll-margin-top: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Form h2{
+    font-size: 40px;
+}
+
+.Form p{
+    font-size: 20px;
+}
+
+.Form select{
+    width: 200px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+table{
+    background: linear-gradient(to right, black, rgb(124, 9, 9));
+    padding: 30px;
+    box-shadow: 0 0 15px black;
+    color: #a30606;
+    border-radius: 5px;
+}
+
+.Form input{
+    margin: 10px;
+}
+
+.Form button{
+    margin: 15px;
+    padding: 8px;
+    border: none;
+    background-color:rgb(90, 13, 13);
+    color: #a30606;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    
+    transition: 0,3s;
+}
+
+.Form button:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+footer p{
+    margin-bottom: 5px;
+    color: rgb(124, 9, 9);
 }
